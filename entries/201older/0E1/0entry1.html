@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Older Entry No. 1</title>
+    <link rel="stylesheet" href="../../../templates/entry.css" />
+    
+  </head>
+
+  <body>
+    <h1>No. 1 — Newport </h1>
+    <h2>July 2–July 24, 2019</h2>
+    
+    <p>These photos were taken over the course of a few weeks over the summer in Newport, Rhode Island. Some of the photos that are not posted here are almost comical how bad they are. Not because they’re blurry, but because the subject or style is just… not great. However, I was 13 when I took them, so I’ll try to be kind to myself. My dad gave me my Fujifilm digital camera for my birthday in 2017, and I really loved it, though I think it took a few years for me to get the hang of it.</p>
+    <p>Oddly enough I do quite like the long exposure failure photo at the end. I remember not knowing why my camera was “glitching” (it just needed time to capture the image in the dark) and then I became sort of frantic. </p>
+    <p>There’s not much to say technically about these photos. They’re alright. I included them mostly because I was with my mom, dad, and sister when I took them. Yet another case where the photos are not particularly special, but the moments are. Or rather, they became special later; at the time, nothing felt extraordinary. We were just together. It’s only now, looking back, that I understand how precious that was.</p>
+    <div id="gallery"></div>
+
+    <script>
+      const folder = "";
+      const images = [
+        { filename: "img1.JPG", caption: "Brick Building" },
+        { filename: "img2.JPG", caption: "Boats" },
+        { filename: "img3.JPG", caption: "A dock and more boats" },
+        { filename: "img4.JPG", caption: "Are you tired of the boats?" },
+        { filename: "img5.JPG", caption: "Lots of Boats in New'port,' huh?" },
+        { filename: "img6.JPG", caption: "Bannister's" },
+        { filename: "img7.JPG", caption: "Watching" },
+        { filename: "img8.JPG", caption: "A photo I do like" },
+        { filename: "img9.JPG", caption: "Trinity" },
+        { filename: "img10.JPG", caption: "--" },
+        { filename: "img11.JPG", caption: "Playing with Positive/Negative Space" },
+        { filename: "img12.JPG", caption: "Clouds" },
+        { filename: "img13.JPG", caption: "I love clouds" },
+        { filename: "img14.JPG", caption: "Oh, more clouds" },
+        { filename: "img15.JPG", caption: "Did we need all these cloud pictures?" },
+        { filename: "img16.JPG", caption: "Hmm..." },
+      ];
+    </script> 
+      
+    <script src="../../../templates/gallery.js"></script>
+    
+    <script>
+      renderGallery(folder, images);
+    </script>
+
+    <footer>
+      <p>Images taken on Fujifilm x100</p>
+    </footer>
+  </body>
+</html>

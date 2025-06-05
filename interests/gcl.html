@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown to Grape Crystal Light Season</title>
+  <style>
+    body {
+      background-color: #7B43B2;
+      font-family: "Times New Roman", serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #FFF;
+    }
+
+    #countdown {
+      font-size: 24pt;
+      margin-top: 20px;
+    }
+
+    #status {
+      font-size: 32pt;
+      color: #FFF;
+      margin-top: 40px;
+    }
+    p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+  </style>
+</head>
+<body>
+
+  <h1>Countdown to Grape Crystal Light Season:</h1>
+  <div id="status"></div>
+   <div id="countdown"></div>
+   <p id="demo"></p>
+
+  <script>
+    function updateCountdown() {
+      const now = new Date();
+      const year = now.getFullYear();
+
+      const may1 = new Date(`${year}-05-01T00:00:00`);
+      const aug31 = new Date(`${year}-08-31T23:59:59`);
+
+      let status = document.getElementById('status');
+      let countdown = document.getElementById('countdown');
+
+      if (now >= may1 && now <= aug31) {
+        status.textContent = "CURRENTLY ACTIVE!!";
+        countdown.textContent = "";
+      } else {
+        // Ater Aug 31, the countdown goes to next May 1
+        const target = now > aug31 ? new Date(`${year + 1}-05-01T00:00:00`) : may1;
+        const oneDay = 1000 * 60 * 60 * 24;
+        const diffDays = Math.ceil((target - now) / oneDay);
+
+        
+        countdown.textContent = `${diffDays} days`;
+      }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000 * 60 * 60); 
+    
+    var countDownDate = new Date("May 1, 2025 00:00:00").getTime();
+    
+    var x = setInterval(function(){ 
+    
+    var now = new Date().getTime();
+    
+    var distance = countDownDate - now;
+    
+    //calcs 
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    if (distance < 0) {
+     clearInterval(x);
+      document.getElementById("demo").innerHTML = "CURRENTLY ACTIVE!";
+   }
+  }, 1000);
+  </script>
+
+
+</body>
+</html>

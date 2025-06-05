@@ -1,0 +1,53 @@
+body {
+      background-color: #faf0dd;
+      font-family: 'Times New Roman', serif;
+      color: #222;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .quote {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    .poem-box {
+      background-color: #FDF5E6;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1); 
+    }
+
+    .poem-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .poem-author {
+      font-style: italic;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .poem-text {
+      white-space: pre-wrap;
+      font-size: 11pt;
+      line-height: 1.6;
+    }
+
+    .poem-note {
+      margin-top: 15px;
+      font-style: italic;
+      color: #666;
+      font-size: 12pt;
+    }

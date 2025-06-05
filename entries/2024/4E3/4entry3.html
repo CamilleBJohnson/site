@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2024 Entry No. 3</title>
+    <link rel="stylesheet" href="../../../templates/entry.css" />
+    <style>
+      #gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>No. 3 — A December Walk</h1>
+    <h2>December 15, 2024</h2>
+    
+    <p>I went on a walk in mid-December during my last few days on campus before break. I did not take many photos, so I had to add some pretty similar shots to get the formatting I wanted. If you were curious, I listened to “The Secret History” by Kerry Muzzey, “Reflections” by Toshifumi Hinata, and “Clair de Lune” by Claude Debussy, as I took these.</p>
+
+    <div id="gallery"></div>
+
+    <script>
+      const folder = "";
+      const images = [
+        { filename: "img1.JPG", caption: "Cupples II" },
+        { filename: "img2.JPG", caption: "--" },
+        { filename: "img3.JPG", caption: "--" },
+        { filename: "img4.JPG", caption: "--" },
+        { filename: "img5.JPG", caption: "--" },
+        { filename: "img6.JPG", caption: "Different Exposure" },
+        { filename: "img7.JPG", caption: "--" },
+        { filename: "img8.JPG", caption: "Observing the Observatory" },
+        { filename: "img9.JPG", caption: "The Chapel, again" },
+      ];
+    </script> 
+      
+    <script src="../../../templates/gallery.js"></script>
+    
+    <script>
+      renderGallery(folder, images);
+    </script>
+
+    <footer>
+      <p>Images taken on Fujifilm x100</p>
+    </footer>
+  </body>
+</html>

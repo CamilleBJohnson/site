@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2025 Entry No. 6</title>
+    <link rel="stylesheet" href="../../../templates/entry.css" />
+    <style>
+        #gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>No. 6 — A Collection </h1>
+    <h2>April 27–May 6, 2025</h2>
+    
+    <p>These photos were taken over the course of a week or so. I was never really out intentionally “taking photos” so I never gathered enough for a whole entry on each day. Instead, these photos are from moments I was walking or sitting around and noticed something photo worthy.</p>
+    <p>Some of these moments arrived out of boredom, too. You can probably tell which ones those are (hint: the last two). Maybe they’re not my strongest shots, but I felt content when I took them, and I still feel that way when I look at them. In the last week of school, those two final places became familiar and special to me. They might seem ordinary, but they ended up meaning a lot to me.</p>
+    <p>The photos themselves are simple, taken of ordinary rooms, at ordinary times, but they hold a personal significance that I think shines through. Or maybe I’m just reading too much into everything again. Maybe I’m just someone who reads too much literature and tries to make life poetic and meaningful when I should just be living it like anyone else. But either way—who’s to tell me no?</p>
+
+    <div id="gallery"></div>
+
+    <script>
+      const folder = "";
+      const images = [
+        { filename: "img1.JPG", caption: "Untitled" },
+        { filename: "img2.JPG", caption: "Sunset" },
+        { filename: "img3.JPG", caption: "The Chapel At Night" },
+        { filename: "img4.JPG", caption: "More Chapel" },
+        { filename: "img5.JPG", caption: "Shapes" },
+        { filename: "img6.JPG", caption: "Place 1" },
+        { filename: "img7.JPG", caption: "Place 1, Part 2" },
+        { filename: "img8.JPG", caption: "Place 2, My Study Room" },
+        { filename: "img9.JPG", caption: "Place 2" },
+      ];
+    </script> 
+      
+    <script src="../../../templates/gallery.js"></script>
+    
+    <script>
+      renderGallery(folder, images);
+    </script>
+
+    <footer>
+      All images taken on my Samsung HMX F900.
+    </footer>
+  </body>
+</html>

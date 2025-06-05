@@ -1,0 +1,56 @@
+   body {
+      background: white;
+      color: black;
+      margin: 40px;
+    }
+
+    h1 {
+      background: navy;
+      color: white;
+      padding: 10px;
+      font-size: 24px;
+      text-align: center;
+      border: 2px solid red;
+    }
+
+    h2 {
+      color: red;
+      font-size: 18px;
+      border-bottom: 1px dashed navy;
+    }
+    
+    .plate-fact {
+      background: #f0f0f0;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    footer {
+      font-size: 12px;
+      border-top: 1px dashed navy;
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 10px;
+      color: gray;
+    }
+
+    figure {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    figure img {
+        width: 200px;
+        border: 1px solid #aaa;
+        box-shadow: 2px 2px 5px #ccc;
+    }
+
+    figcaption {
+        font-size: 12px;
+        color: #555;
+        margin-top: 5px;
+    }
+
+    .indented {
+        padding-left: 40px;
+    }
